@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>桌遊清單</title>
+    <link rel="stylesheet" type="text/css" href="./boardgameList.css">
+    <script src="./boardgameList.js"></script>
+
+</head>
+
+<body>
+<!-- to do: 修正圖片與內容介紹 -->
+    <nav class="navBar">
+        <ul>
+            <li>
+                <img src="../a3i7e-x17u8-001.ico" alt="桌遊管家logo">
+            </li>
+            <li>
+                <a href="../main.html">首頁</a>
+            </li>
+            <li>
+                <a href="./boardgameList.html">桌遊清單</a>
+            </li>
+            <li>
+                <a href="../boardgameRank/boardgameRank.html">桌遊排行榜</a>
+            </li>
+            <li>
+                <a href="../boardgameDiscussion/boardgameDiscussion.html">桌遊討論區</a>
+            </li>
+            <li>
+                <a href="../boardgameHelper/boardgameHelper.html">桌遊小幫手</a>
+            </li>
+            <li>
+                <a href="../boardgameSet/boardgameSet.html">美好的假日</a>
+            </li>
+            <li>
+                <a href="../boardgameMember/boardgameMember.html">會員登入</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="mainBody">
+        <div class="up">
+            <h1>可以透過點擊圖片來查看清單!</h1>
+            <p>總計三百套以上的遊戲，固定增加新品項。有什麼想了解的遊戲也請跟我們說！</p>
+        </div>
+        <div class="down">
+            <div class="category">
+                <button id="btn1"><img id="img1" src="../派對遊戲.png" alt="派對遊戲"></button>        
+                <h6>可適合多人一起遊戲，不管是第一次還是玩了很多次，都很適合出現於串場或開場時。</h6>
+            </div>
+
+            <div class="category">
+                <button id="btn2"><img id="img2" src="../策略遊戲.png" alt="策略"></button>   
+                <h6>需要花點腦筋的遊戲，思考對方的想法來行動，大多為配置及分展的遊戲。</h6>
+            </div>
+
+            <div class="category">
+                <button id="btn3"><img id="img3" src="../主題遊戲.png" alt="主題"></button> 
+                <h6>比較多是角色扮演的遊戲，充滿著不同豐富的背景元素。</h6>
+            </div>
+        
+        </div>
+        <div class="down">
+            <div class="category">
+                <button id="btn4"><img id="img4" src="../抽象遊戲.png" alt="抽象"></button> 
+                <h6>大多為棋類擺放的遊戲，配件不多，思考程度卻更需長遠。</h6>
+            </div>
+
+                <div class="category">
+                    <button id="btn5"><img id="img5" src="../制定遊戲.png" alt="制定"></button> 
+                    <h6>玩家可自由搭配遊戲組合然後開始遊戲，LCG或戰棋及對戰的遊戲居多。</h6>
+                </div>
+        </div>              
+        <div class="down">
+            <div class="category">
+                <button id="btn6"> <img id="img6" src="../兒童遊戲.png" alt="兒童"></button> 
+                <h6>適合較小的孩童玩的遊戲，一方面也比較可以當教具。</h6>
+            </div>
+
+            <div class="category">
+                <button id="btn7"><img id="img7" src="../家庭遊戲.png" alt="家庭"></button>
+                <h6>像是家庭聚會的時間可以闔家大小一起玩的遊戲，不論是大人小孩都能樂在其中。</h6>
+            </div>
+
+            <div class="category">
+                <button id="btn8"><img id="img8" src="../戰爭遊戲.png" alt="戰爭"></button> 
+                <h6>完全就是兩方甚至多方針對性的遊戲。</h6>
+            </div>
+        </div>        
+    </div>    
+
+    <footer class="footer">
+        <small>Author: Willy Weng</small>
+        <br>
+        <small>Contact: willyyayaya@gmail.com</small>
+    </footer>
+</body>
+
+</html>
+
+<!-- 每個類別都做一個彈窗 -->
+<dialog id="dialog1">
+    <button id="btnClose1" autofocus>關閉</button>
+        <p>1 怒海求生 4~6</p>
+        <br>
+        <p>2 種豆 2~5</p>
+        <br>
+        <p>3 東京之王 2~6</p>
+        <br>
+        <p>4 我是大老闆! 3~6</p>
+        <br>
+        <p>5 逃離亞特蘭迪斯  2~4</p>    
+        <br>
+        <p>6 明槍你錢 3~6</p>
+</dialog>
+
+<dialog id="dialog2">
+    <button id="btnClose2" autofocus>關閉</button>
+        <p>1 山中小屋 2~6</p>
+        <br>
+        <p>2 小白世紀 3~6</p>
+        <br> 
+        <p>3 落跑修女 2~8</p>
+        <br> 
+        <p>4 割喉冒險隊 3~6</p>
+        <br>
+        <p>5 紅龍酒店(1~4) 2~4</p>
+        <br>
+        <p>6 從前從前 2~6</p>
+</dialog>
+
+<dialog id="dialog3">
+    <button id="btnClose3" autofocus>關閉</button>
+        <p>1 禁制之島 2~4</p>
+        <br>
+        <p>2 瘟疫危機 2~5</p>
+        <br> 
+        <p>3 聊齋 2~4</p>
+        <br>
+        <p>4 地城鬥士 2~6</p>
+        <br>
+        <p>5 花火 2~5</p>
+</dialog>
+
+<dialog id="dialog4">
+    <button id="btnClose4" autofocus>關閉</button>
+        <p>1 妙語說書人 3~6</p>
+        <br>
+        <p>2 妙語說書人(奧德賽) 3~12</p>
+        <br>
+        <p>3 妙語說書人(旅程) 3~12</p>
+        <br>
+        <p>4 明槍你錢(Live) 8~20</p>
+        <br>
+        <p>5 是的，領主大人！ 3~8</p>
+        <br>
+        <p>6 真心話不冒險 4~10</p>
+        <br>
+        <p>7 砸蛋 4~10</p>
+        <br>
+        <p>8 LIFEBOATS 3~6</p>
+        <br>
+        <p>9 九霄雲外 3~6</p>
+        <br>
+        <p>10 小馬快遞 2~5</p>
+        <br>
+        <p>11 勝利之路 2~5</p>
+        <br>
+        <p>12 魔法迷宮 2~4</p>
+        <br>
+        <p>13 原始人建築師 4~10</p>
+        <br>
+        <p>14 欲罷不能 2~4</p>
+        <br>
+        <p>15 吹牛骰 3~6</p>
+        <br>
+        <p>16 古墓迷蹤 2~5</p>
+        <br>
+        <p>17 地產大亨 2~6</p>
+        <br>
+        <p>18 牛牛衝浪 2~5</p>
+        <br>
+        <p>19 king me! 3~6</p>
+        <br>
+        <p>20 搗蛋大法師 3~8</p>
+        <br>
+        <p>21 船長很瞎 4~8</p>
+        <br>
+        <p>22 鯊口餘生 3~6</p>
+        <br>
+        <p>23 Pitch car 2~8</p>
+        <br>
+        <p>24 送禮高手 3~8</p>
+        <br>
+        <p>25 驢橋 3~6</p>
+        <br>
+        <p>26 誰是牛頭王 2~10</p>
+        <br>
+        <p>27 動物大老二 2~8</p>
+        <br>
+        <p>28 迷宮牧場的決鬥 2~6</p>
+        <br>
+        <p>29 迴轉壽司 2~4</p>
+        <br>
+        <p>30 鯊魚撞球 2~4</p>
+        <br>
+        <p>31 腦波感應 1~4</p>
+        <br>
+        <p>32 躲貓貓 2~5</p>
+        <br>
+        <p>33 妙廚上菜 2~4</p>
+        <br>
+        <p>34 鼠來堡+擴充 2~5</p>
+        <br>
+        <p>35 蘇格蘭特警 3~6</p>
+        <br>
+        <p>36 假面舞會 2~12</p>
+        <br>
+        <p>37 犯人在跳舞 4~8</p>
+        <br>
+        <p>38 一夜終極狼人 5~10</p>
+        <br>
+        <p>39 駱駝大賽 2~8</p>
+        <br>
+        <p>40 天生絕配 4~8</p>
+        <br>
+        <p>41 紳士與淑女 4~10</p>
+        <br>
+        <p>42 蟑螂捕手 2~4</p>
+        <br>
+        <p>43 狼來了 4~8</p>
+        <br>
+        <p>44 傳情畫意 5~8</p>
+</dialog>
+
+<dialog id="dialog5">
+    <button id="btnClose5" autofocus>關閉</button>
+    <p>1 巨獸競技場 2~5</p>
+    <br>
+    <p>2 富饒之城 2~7</p>
+    <br>
+    <p>3 詐賭巫師 3~6</p>
+    <br>
+    <p>4 燒錢計畫 2~4</p>
+    <br>
+    <p>5 殭屍小鎮 2~6</p>
+    <br>
+    <p>6 神機妙算 2~5</p>
+    <br>
+    <p>7 石器時代 2~5</p>
+    <br>
+    <p>8 碰撞機器人 1~99</p>
+    <br>
+    <p>9 吉薩金字塔 2~5</p>
+    <br>
+    <p>10 現代藝術 3~5</p>
+    <br>
+    <p>11 謀殺法則 2~5</p>
+    <br>
+    <p>12 Drago 騎龍傳 2~5</p>
+    <br>
+    <p>13 Fits 1~4</p>
+    <br>
+    <p>14 電力公司 2~6</p>
+    <br>
+    <p>15 夢工廠 2~5</p>
+    <br>
+    <p>16 女巫釀 3~5</p>
+    <br>
+    <p>17 舊金山纜車 2~4</p>
+    <br>
+    <p>18 銀河競逐 2~4</p>
+    <br>
+    <p>19 Flip out 2~5</p>
+    <br>
+    <p>20 骰子鎮 2~5</p>
+    <br>
+    <p>21 水果莊園 2~4</p>
+    <br>
+    <p>22 太陽神 2~5</p>
+    <br>
+    <p>23 聖胡安 2~4</p>
+    <br>
+    <p>24 陰謀大亂鬥 2~5</p>
+    <br>
+    <p>25 波多黎各 2~5</p>
+    <br>
+    <p>26 聖彼得堡 2~4</p>
+    <br>
+    <p>27 推倒堤基 2~4</p>
+    <br>
+    <p>28 骰子斗咪 2~4</p>
+    <br>
+    <p>29 火牛陣 2~5</p>
+    <br>
+    <p>30 射鴨子 2~6</p>
+    <br>
+    <p>31 水瓶座 2~5</p>
+    <br>
+    <p>32 潮汐運轉 2~5</p>
+    <br>
+    <p>33 斷頭台 2~5</p>
+    <br>
+    <p>34 房地產拍賣 3~6</p>
+    <br>
+    <p>35 拉密 2~4</p>
+    <br>
+    <p>36 形色棋 2~5</p>
+    <br>
+    <p>37 七大奇蹟 2~7</p>
+    <br>
+    <p>38 托巴哥 2~4</p>
+    <br>
+    <p>39 峰迴路轉 2~4</p>
+    <br>
+    <p>40 傻瓜炒股 2~4</p>
+    <br>
+    <p>41 格格不入 2~4</p>
+    <br>
+    <p>42 卡坦島 3~6</p>
+    <br>
+    <p>43 鐵道任務 2~5</p>
+    <br>
+    <p>44 呆伯特 3~6</p>
+    <br>
+    <p>45 馬尼拉 3~5</p>
+    <br>
+    <p>46 奪寶奇巫 2~4</p>
+    <br>
+    <p>47 尼加拉瓜瀑布+擴充 2~5</p>
+    <br>
+    <p>48 卡卡頌 2~5</p>
+    <br>
+    <p>49 卡卡頌(大盒版) 2~6</p>
+    <br>
+    <p>50 皇輿爭霸 2~4</p>
+    <br>
+    <p>51 皇輿爭霸-暗潮洶湧 2~4</p>
+    <br>
+    <p>52 雷霆之石 2~5</p>
+    <br>
+    <p>53 兩河流域 2~4</p>
+    <br>
+    <p>54 佛羅倫斯王子 2~4</p>
+    <br>
+    <p>55 地城領主 2~4</p>
+    <br>
+    <p>56 凱呂斯 2~5</p>
+    <br>
+    <p>57 日與夜 2~4</p>
+    <br>
+    <p>58 特魯瓦城 2~4</p>
+    <br>
+    <p>59 王國建築師 2~4</p>
+    <br>
+    <p>60 萊伯塔莉海盜 2~6</p>
+    <br>
+    <p>61 小世界 2~5</p>
+    <br>
+    <p>62 末日商場 3~6</p>
+    <br>
+    <p>63 四季 2~4</p>
+    <br>
+    <p>64 妙探尋兇 3~6</p>
+    <br>
+    <p>65 菲力貓 2~5</p>
+    <br>
+    <p>66 御竹園 2~4</p>
+    <br>
+    <p>67 CV履歷人生 2~4</p>
+    <br>
+    <p>68 套利 3~6</p>
+    <br>
+    <p>69 深水城領主 2~5</p>
+    <br>
+    <p>70 演化論 2~4</p>
+    <br>
+    <p>71 國王堡 2~5</p>
+    <br>
+    <p>72 決戰台北町 2~5</p>
+    <br>
+    <p>73 末日浩劫 2~4</p>
+    <br>
+    <p>74 齊柏林飛船 2~4</p>
+    <br>
+    <p>75 璀璨寶石 2~4</p>
+    <br>
+    <p>76 星際奇航 2~4</p>
+    <br>
+    <p>77 柯爾特快車 3~6</p>
+    <br>
+    <p>78 寶石陣 1~6</p>
+    <br>
+    <p>79 銀河路骰 2~5</p>
+    <br>
+    <p>80 小世界(地底世界) 2~5</p>
+    <br>
+    <p>81 鋼鐵與火藥 2~4</p>
+    <br>
+    <p>82 美麗島風雲III：內戰 2~4</p>
+    <br>
+    <p>83 壬辰之戰 2or4</p>
+    <br>
+    <p>84 CO2 3~5</p>
+    <br>
+    <p>85 魔法磁石迷宮 2~4</p>
+    <br>
+    <p>86 熱氣球之旅 3~6</p>
+</dialog>
+
+<dialog id="dialog6">
+    <button id="btnClose6" autofocus>關閉</button>
+    <p>1 哆寶 2~8</p>
+    <br>
+    <p>2 閃靈快手 2~8</p>
+    <br>
+    <p>3 閃靈快手2 2~8</p>
+    <br>
+    <p>4 蟑螂沙拉 2~6</p>
+    <br>
+    <p>5 德國蟑螂 2~8</p>
+    <br>
+    <p>6 醜娃娃 2~8</p>
+    <br>
+    <p>7 Cash on Catch 一網打盡 2~5</p>
+    <br>
+    <p>8 圖騰快手 2~10</p>
+    <br>
+    <p>9 圖騰快手(雷曼兔) 2~10</p>
+    <br>
+    <p>10 愛麗喵夢遊仙境 2~4</p>
+    <br>
+    <p>11 企鵝抓手 2~6</p>
+    <br>
+    <p>12 數字急轉彎 2~4</p>
+    <br>
+    <p>13 烏邦果 2~4</p>
+    <br>
+    <p>14 我先走啦! 3~10</p>
+</dialog>
+
+<dialog id="dialog7">
+    <button id="btnClose7" autofocus>關閉</button>
+    <p>1 美麗島風雲 3~8</p>
+    <br>
+    <p>2 美麗島風雲II：讓鞋子飛 4~6</p>
+    <br>
+    <p>3 風聲 3~8</p>
+    <br>
+    <p>4 諜影危機 3~8</p>
+    <br>
+    <p>5 盜夢都市 4~8</p>
+    <br>
+    <p>6 盜夢都市(銀河) 4~10</p>
+    <br>
+    <p>7 三國殺 2~8</p>
+    <br>
+    <p>8 CSI犯罪現場 4~8</p>
+    <br>
+    <p>9 天黑請閉眼 8~25</p>
+    <br>
+    <p>10 狼人 8~25</p>
+    <br>
+    <p>11 星杯傳說 4~6</p>
+    <br>
+    <p>12 闇影獵人 4~8</p>
+    <br>
+    <p>13 矮人礦坑 3~10</p>
+    <br>
+    <p>14 狼人之夜 5~10</p>
+    <br>
+    <p>15 魔城馬車 3~10</p>
+    <br>
+    <p>16 推翻蘇丹 5~15</p>
+    <br>
+    <p>17 抵抗組織 5~10</p>
+    <br>
+    <p>18 抵抗組織：阿瓦隆 5~10</p>
+    <br>
+    <p>19 星際迷航 3~6</p>
+</dialog>
+
+<dialog id="dialog8">
+    <button id="btnClose8" autofocus>關閉</button>
+    <p>1 狡兔三窟 2~4</p>
+    <br>
+    <p>2 壽司骰 2~5</p>
+    <br>
+    <p>3 蟲蟲燒烤派對 2~7</p>
+    <br>
+    <p>4 時間軸 2~6</p>
+    <br>
+    <p>5 No,thanks! 2~5</p>
+    <br>
+    <p>6 雞同鴨搶 2~6</p>
+    <br>
+    <p>7 魔法運動會 3~6</p>
+    <br>
+    <p>8 俄羅斯輪盤 2~6</p>
+    <br>
+    <p>9 狼與羊 2~6</p>
+    <br>
+    <p>10 讚美詩 2~4</p>
+    <br>
+    <p>11 拾貓鍋 2~5</p>
+    <br>
+    <p>12 跑跑龜 2~5</p>
+    <br>
+    <p>13 翻桌吧溫蒂妮小姐 2~4</p>
+    <br>
+    <p>14 錦鯉 2~4</p>
+    <br>
+    <p>15 嘿!我的魚 2~4</p>
+    <br>
+    <p>16 蜘蛛三兄妹 2~4</p>
+</dialog>
+  

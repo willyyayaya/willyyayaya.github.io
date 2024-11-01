@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>桌遊排行榜</title>
+    <link rel="stylesheet" type="text/css" href="./boardgameRank.css">
+    <script src="./boardgameRank.js"></script>
+
+</head>
+
+<body>
+<!-- to do: 修正圖片與內容介紹 -->
+    <nav class="navBar">
+        <ul>
+            <li>
+                <img src="../a3i7e-x17u8-001.ico" alt="桌遊管家logo">
+            </li>
+            <li>
+                <a href="../main.html">首頁</a>
+            </li>
+            <li>
+                <a href="../boardgameList/boardgameList.html">桌遊清單</a>
+            </li>
+            <li>
+                <a href="./boardgameRank.html">桌遊排行榜</a>
+            </li>
+            <li>
+                <a href="../boardgameDiscussion/boardgameDiscussion.html">桌遊討論區</a>
+            </li>
+            <li>
+                <a href="../boardgameHelper/boardgameHelper.html">桌遊小幫手</a>
+            </li>
+            <li>
+                <a href="../boardgameSet/boardgameSet.html">美好的假日</a>
+            </li>
+            <li>
+                <a href="../boardgameMember/boardgameMember.html">會員登入</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="mainBody">
+        <div class="up">
+          <h1>可以透過點擊圖片來查看排名!</h1>
+          <p>經過網友票選出前五名的桌游都在這啦！看看跟你心目中的排名是否一樣！</p>
+        </div>
+        <div class="down">
+            <div class="category">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img id="img1" src="../派對遊戲.png" alt="派對">
+                        <h6 class="filp-card-word">可適合多人一起遊戲，不管是第一次還是玩了很多次，都很適合出現於串場或開場時。</h6>
+                      </div>
+                      <div class="flip-card-back">
+                        <h4>總排名</h4>
+                        <p class="game-item" data-game-id="5">1 怒海求生 4~6</p>
+                        <br>
+                        <p class="game-item" data-game-id="6">2 種豆 2~5</p>
+                        <br>
+                        <p class="game-item" data-game-id="7">3 東京之王 2~6</p>
+                        <br>
+                        <p class="game-item" data-game-id="8">4 我是大老闆! 3~6</p>
+                        <br>
+                        <p class="game-item" data-game-id="9">5 逃離亞特蘭迪斯  2~4</p>
+                      </div>
+                    </div>
+                </div>    
+            </div>
+
+            <div class="category">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img id="img2" src="../策略遊戲.png" alt="策略">
+                        <h6>需要花點腦筋的遊戲，思考對方的想法來行動，大多為配置及分展的遊戲。</h6>
+                      </div>
+                      <div class="flip-card-back"> 
+                            <h4>總排名</h4>
+                            <p>1 山中小屋 2~6</p>
+                            <br>
+                            <p>2 小白世紀 3~6</p>
+                            <br> 
+                            <p>3 落跑修女 2~8</p>
+                            <br> 
+                            <p>4 割喉冒險隊 3~6</p>
+                            <br>
+                            <p>5 紅龍酒店(1~4) 2~4</p>
+                      </div>
+                    </div>
+                </div>  
+            </div>
+
+            <div class="category">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img id="img3" src="../主題遊戲.png" alt="主題">
+                        <h6>比較多是角色扮演的遊戲，充滿著不同豐富的背景元素。</h6>
+                      </div>
+                      <div class="flip-card-back"> 
+                            <h4>總排名</h4>
+                            <p>1 禁制之島 2~4</p>
+                            <br>
+                            <p>2 瘟疫危機 2~5</p>
+                            <br> 
+                            <p>3 聊齋 2~4</p>
+                            <br>
+                            <p>4 地城鬥士 2~6</p>
+                            <br>
+                            <p>5 花火 2~5</p>
+                      </div>
+                    </div>
+                </div> 
+                
+                
+            </div>
+        
+        </div>
+        <div class="down">
+                <div class="category">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                          <div class="flip-card-front">
+                            <img id="img4" src="../抽象遊戲.png" alt="抽象">
+                            <h6>大多為棋類擺放的遊戲，配件不多，思考程度卻更需長遠。</h6>
+                          </div>
+                          <div class="flip-card-back"> 
+                                <h4>總排名</h4>
+                                <p>1 妙語說書人 3~6</p>
+                                <br>
+                                <p>2 妙語說書人(奧德賽) 3~12</p>
+                                <br>
+                                <p>3 妙語說書人(旅程) 3~12</p>
+                                <br>
+                                <p>4 明槍你錢(Live) 8~20</p>
+                                <br>
+                                <p>5 是的，領主大人！ 3~8</p>
+                          </div>
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="category">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                          <div class="flip-card-front">
+                            <img  id="img5" src="../制定遊戲.png" alt="制定">
+                            <h6>玩家可自由搭配遊戲組合然後開始遊戲，LCG或戰棋及對戰的遊戲居多。</h6>
+                          </div>
+                          <div class="flip-card-back"> 
+                                <h4>總排名</h4>
+                                <p>1 巨獸競技場 2~5</p>
+                                <br>
+                                <p>2 富饒之城 2~7</p>
+                                <br>
+                                <p>3 詐賭巫師 3~6</p>
+                                <br>
+                                <p>4 燒錢計畫 2~4</p>
+                                <br>
+                                <p>5 殭屍小鎮 2~6</p>
+                          </div>
+                        </div>
+                    </div> 
+                </div>
+          </div>              
+        <div class="down">
+            <div class="category">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img id="img6" src="../兒童遊戲.png" alt="兒童">
+                        <h6>適合較小的孩童玩的遊戲，一方面也比較可以當教具。</h6>
+                      </div>
+                      <div class="flip-card-back"> 
+                            <h4>總排名</h4>
+                            <p>1 哆寶 2~8</p>
+                            <br>
+                            <p>2 閃靈快手 2~8</p>
+                            <br>
+                            <p>3 閃靈快手2 2~8</p>
+                            <br>
+                            <p>4 蟑螂沙拉 2~6</p>
+                            <br>
+                            <p>5 德國蟑螂 2~8</p>
+                      </div>
+                    </div>
+                </div> 
+            </div>
+            <div class="category">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img id="img7" src="../家庭遊戲.png" alt="家庭">
+                        <h6>像是家庭聚會的時間可以闔家大小一起玩的遊戲，不論是大人小孩都能樂在其中。</h6>
+                      </div>
+                      <div class="flip-card-back"> 
+                            <h4>總排名</h4>
+                            <p>1 美麗島風雲 3~8</p>
+                            <br>
+                            <p>2 美麗島風雲II：讓鞋子飛 4~6</p>
+                            <br>
+                            <p>3 風聲 3~8</p>
+                            <br>
+                            <p>4 諜影危機 3~8</p>
+                            <br>
+                            <p>5 盜夢都市 4~8</p>
+                      </div>
+                    </div>
+                </div> 
+            </div>
+            <div class="category">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img id="img8" src="../戰爭遊戲.png" alt="戰爭">
+                        <h6>完全就是兩方甚至多方針對性的遊戲。</h6>
+                      </div>
+                      <div class="flip-card-back"> 
+                            <h4>總排名</h4>
+                            <p>1 狡兔三窟 2~4</p>
+                            <br>
+                            <p>2 壽司骰 2~5</p>
+                            <br>
+                            <p>3 蟲蟲燒烤派對 2~7</p>
+                            <br>
+                            <p>4 時間軸 2~6</p>
+                            <br>
+                            <p>5 No,thanks! 2~5</p>
+                      </div>
+                    </div>
+                </div> 
+            </div>
+        </div>        
+    </div>  
+
+    <footer class="footer">
+        <small>Author: Willy Weng</small>
+        <br>
+        <small>Contact: willyyayaya@gmail.com</small>
+    </footer>
+</body>
+
+</html>
+

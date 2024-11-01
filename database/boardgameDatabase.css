@@ -1,0 +1,171 @@
+/* 捲軸寬度及高度 */
+::-webkit-scrollbar {
+    width: 30px; /*右側捲軸寬度*/
+    height: 30px; /*下方捲軸高度*/
+    border-radius: 12px;
+    background-color: rgb(255, 216, 169);
+  }
+  /* 軌道背景底色 */
+  ::-webkit-scrollbar-track {
+    background: rgb(253, 238, 220); 
+    /* border-radius: 12px; */
+  }
+   
+  /* 滑桿顏色 */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(255, 216, 169);
+    /* border-radius: 12px; */
+  }
+  /* 滑桿滑鼠滑入時的顏色 */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(241, 166, 97); 
+  }
+  /* 捲軸兩側頂端的按鈕 */
+  ::-webkit-scrollbar-button {
+    background-color: rgb(255, 216, 169); 
+    border-radius: 12px;
+  }
+  /* 捲軸兩側頂端的按鈕滑鼠滑入時的顏色 */
+  ::-webkit-scrollbar-button:hover {
+    background-color: rgb(241, 166, 97); 
+    border-radius: 12px;
+  }
+
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    background-size: cover;
+    font-family: monospace;
+    font-size: 20px;
+    background-color: rgb(255, 208, 155);
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+  }
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(227, 139, 41);
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: rgb(226, 124, 7);
+}
+
+nav ul li img {
+    color: white;
+    padding: 7px 0px;
+    text-decoration: none;
+    display: block;
+}
+
+.mainBody {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    /* background-color: rgb(253, 255, 188); */
+}
+
+.up {
+    width: 100%;
+    background-color: rgb(253, 255, 188);
+    text-align: center;
+    padding: 20px;
+    margin-top: 55px;
+    box-sizing: border-box;
+}
+
+.game-template {
+    width: 80%;
+    max-width: 800px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.game-image {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.game-info {
+    flex: 1;
+}
+
+.game-info h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+.game-info p {
+    font-size: 16px;
+    color: #555;
+    margin: 5px 0;
+}
+
+.game-info strong {
+    color: #222;
+}
+
+button {
+  display: block;
+  /* width: 100%; */
+  padding: 10px;
+  background-color: rgb(255, 220, 184);
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: rgb(255, 193, 182);
+}
+
+.footer {
+    bottom: 0;
+    left: 0;
+    /* width: 100%; */
+    background-color: rgb(227, 139, 41);
+    padding: 5px;
+    text-align: center;
+    margin: 0;
+    color: rgb(0, 0, 0);
+}
